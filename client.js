@@ -34,5 +34,13 @@ const connect = function () {
   return conn;
 };
 
+const setupInput = function () {
+  const stdin = process.stdin;
+  stdin.setRawMode(true);
+  stdin.setEncoding("utf8");
+  stdin.resume();
+  return stdin;
+};
+
 // Export the connect function
-module.exports = { connect };
+module.exports = { connect, setupInput };
