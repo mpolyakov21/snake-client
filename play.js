@@ -6,4 +6,4 @@ const conn = connect(); // Establish connection
 
 
 // Call setupInput function to set up input from stdin
-setupInput();
+setupInput(conn);
