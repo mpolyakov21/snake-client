@@ -20,6 +20,10 @@ const setupInput = (conn) => {
       connection.write("Move: down"); // Send the movement command to the server
     } else if (key === 'd') {
       connection.write("Move: right"); // Send the movement command to the server
+    } else if (key === 'z') {
+      connection.write("Say: Sup!"); // Send the movement command to the server
+    } else if (key === 'x') {
+      connection.write("Say: Toodles!"); // Send the movement command to the server
     }
   };
 
